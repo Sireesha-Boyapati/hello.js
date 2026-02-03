@@ -12,6 +12,12 @@ alert("The sum is " + sum);
 return sum;
 }
 
-let f = [3,5];
-let m = [2,3,4,5,6,7,8,9];
-console.log(func(f,m));
+function sum(f,m){
+const inputFArray = document.getElementById("fArrayInput").value;
+const inputMArray = document.getElementById("mArrayInput").value;
+const arrayF = inputFArray.split(',').map(item => parseInt(item.trim(),10)).filter(Number.isFinite);
+const arrayM = inputMArray.split(',').map(item => parseInt(item.trim(),10)).filter(Number.isFinite);
+
+const result = func(arrayF,arrayM);
+document.getElementById("sum").textContent = "The sum is: "+ result;
+}
