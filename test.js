@@ -11,7 +11,7 @@ let sum = 0;
 return sum;
 }
 
-function sumCalculattion(){
+function sumCalculation(){
 const inputFArray = document.getElementById("fArrayInput").value;
 const inputMArray = document.getElementById("mArrayInput").value;
 const arrayF = inputFArray.split(',').map(item => parseInt(item.trim(),10)).filter(Number.isFinite);
