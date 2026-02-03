@@ -8,11 +8,10 @@ let sum = 0;
    }
   }
  }
-alert("The sum is " + sum);
 return sum;
 }
 
-function sum(f,m){
+function sumCalculattion(f,m){
 const inputFArray = document.getElementById("fArrayInput").value;
 const inputMArray = document.getElementById("mArrayInput").value;
 const arrayF = inputFArray.split(',').map(item => parseInt(item.trim(),10)).filter(Number.isFinite);
